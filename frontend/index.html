@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>大锤导航</title>
+  <link href = "images/favicon.ico" rel = "shortcut icon">
+  <link rel = "stylesheet" type = "text/css" href = "css/reset.css">
+<style>
+body{background:#eeeeee;font-size:14px;font-family: "微软雅黑"}
+/*清除浮动*/
+.clearfix{zoom:1;}
+.clearfix:after{content:".";display: block;height:0;clear:both;visibility: hidden;}
+/*整体*/
+.g-hd{width:100%;height:350px;background:url(http://wx4.sinaimg.cn/large/e414eec4gy1fip3aqubx1j21hc0nk7nc.jpg) no-repeat top center;}
+.m-section{width:1235px;min-height:170px;margin:20px auto;position:relative;background: #fff;border-radius: 4px;border:1px solid #dedede;}
+.m-hot{width:1235px;margin:20px auto;position:relative;}
+/*搜索框*/
+.m-logo{width:1235px;min-height:170px;margin:20px auto;position:relative;}
+.m-search-group{width:1235px;min-height:170px;margin:20px auto;position:relative;}
+.u-sitename{display:block;font:56px 微软亚黑;position:absolute;top:80px;left:50px;}
+.m-search{width:600px;height:100px;position:absolute;bottom:22px;right:0;}
+.s-search{float:left;width:128px;height:42px;margin:25px 10px 0;background:url(images/search.png) -128px 0;}
+.u-search-box{float:left;width:452px;}
+.u-searchbox-nav{width:460px;height:31px;}
+.u-search-nav{width:460px;height:31px;}
+.u-search-nav > .u-li{width:60px;height:24px;line-height: 24px;float:left;margin-right:5px;background:#6a6666;text-align:center;font-family:STHeiti,"Microsoft Yahei",Arial,Simhei,Simsun;font-size:14px;cursor:pointer;}
+.s-white{color:#fff;}
+.u-search-nav > .active{background:#e94441;}
+.u-input-box{width:452px;height:40px;background:#fff;position: relative;}
+.u-input-box > input{width:341px;height:40px;float:left;padding:10px 0 10px 10px;outline:0;background: #fff;font-size:14px;border:1px solid #d8d8d8;border-right:0;}
+.u-input-box > button{width:111px;height:40px;float: left;border: 0;background:#38f;cursor:pointer;font-family: 微软雅黑;font-size:16px;outline: 0;text-shadow: 1px 2px 3px rgba(0,0,0,.3);color:#fff;}
+
+.m-hotlist{height:86px;padding-left:12px;}
+.m-hotlist > li{float:left;padding-left:12px;}
+.m-hot-item{display: block;width:64px;height:82px;background: #fff;border:2px solid #fff;border-radius:2px;}
+.m-hot-item > img{width:48px;height:48px;display:block;margin:7px auto 0;}
+.m-hot-item > span{display: block;width:100%;height:18px;text-align: center;margin-top:4px;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+.m-hot-item:hover{border-color:#1acc93;}
+
+.u-hotlistbg{width:1140px;height:33px;margin:20px auto 0;border:1px solid #38f;border-radius:17px;background:#fefdfe;overflow: hidden;}
+.m-hotlist2{height:33px;margin-left:44px;}
+.m-hotlist2 > li{float: left;}
+
+.m-ritem{display: block;width:120px;height:33px;line-height: 33px;}
+.m-ritem:hover{color:#2E7CDE;}
+.m-ritem > img{float:left;margin-top:8px;width:16px;height:16px;}
+.m-ritem > span{margin-left:10px;}
+
+
+.m-category{width:1235px;height:40px;line-height: 40px;}
+.m-category:hover{background: #f9f3f9}
+.m-category > li{width:112px;height:40px;line-height:40px;float:left;text-align: center;}
+.m-category a:hover {color:#2E7CDE;}
+.m-category > .u-label{width:80px;}
+.u-label > span{padding:2px 10px 3px;background: #EDBD14;border-radius: 4px;color:#fff;}
+</style>
+</head>
+
+<body>
+<div class = "g-hd" >
+  <div class = "m-logo">
+    <a class = "u-sitename">大锤导航</a>
+  </div>
+  <div class = "m-search-group">
+    <div class = "m-search clearfix">
+      <div class = "s-search"></div>
+      <form class = "u-search-box " target = "_blank" action = "http://www.baidu.com/s" method = "GET">
+          <ul class = "u-search-nav">
+            <li class = "u-li active"><a href = "http://www.baidu.com" target = "_blank" class = "s-white">网页</a></li>
+            <li class = "u-li"><a href = "http://www.baidu.com" target = "_blank" class = "s-white">网页</a></li>
+            <li class = "u-li"><a href = "http://www.baidu.com" target = "_blank" class = "s-white">网页</a></li>
+            <li class = "u-li"><a href = "http://www.baidu.com" target = "_blank" class = "s-white">网页</a></li>
+            <li class = "u-li"><a href = "http://www.baidu.com" target = "_blank" class = "s-white">网页</a></li>
+            <li class = "u-li"><a href = "http://www.baidu.com" target = "_blank" class = "s-white">网页</a></li>
+          </ul>
+          <div class = "u-input-box" >
+            <input type = "search" actocomplete = "off" name = "wd">
+            <button type = "submit">搜索</button>
+          </div>
+        </form>
+    </div>
+  </div>
+
+</div>
+<div class = "m-hot">
+  <ul class = "m-hotlist">
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li> 
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li> 
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li> 
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li> 
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>
+    <li>
+      <a class = "m-hot-item" href = "" target = "_blank">
+        <img src = "images/bilibili.jpg" >
+        <span>暴走漫画</span>
+      </a>
+    </li>     
+  </ul>
+
+<div class = "u-hotlistbg">
+  <ul class = "m-hotlist2">
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li>
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li>
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li> 
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li> 
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li> 
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li> 
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li> 
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li> 
+    <li>
+        <a class = "m-ritem" href = "" target = "_blank">
+          <img src = "http://www.zhihu.com/favicon.ico" alt = "知乎" title = "知乎">
+          <span>360搜索</span>
+        </a>
+    </li>     
+  </ul>
+</div>
+</div>
+<div class = "m-section">
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+
+</div>
+<div class = "m-section">
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  
+</div>
+<div class = "m-section">
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  <ul class = "m-category">
+    <li class = "u-label">
+      <span >视频</span>
+    </li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+    <li><a href = "" target= "_blank">哔哩哔哩</a></li>
+  </ul>
+  
+</div>
+
+</body>
+</html>
