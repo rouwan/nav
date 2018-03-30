@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素</title>
+	<style>
+
+		.demo:after{
+			content:'';
+			display:inline-block;
+			width:0;
+			height:0;
+			border:8px solid transparent;
+			border-left:8px solid #AFABAB;
+			position: relative;
+			top:2px;
+			left:10px;
+		}
+
+		.left, .right{
+			min-height: 40px;
+			position: relative;
+			display:table;
+			text-align: center;
+			border-radius: 7px;
+			background: #9EEA6A;
+		}
+
+		.right{top:40px;left:60px;}
+		.left > p, .right > p{
+			display: table-cell;
+			vertical-align: middle;
+			padding:0 10px;
+		}
+
+		.left:before, .right:after{
+			content: '';
+			display: block;
+			width:0;
+			height:0;
+			border:8px solid transparent;
+			position: absolute;
+			top:11px;
+		}
+
+		.left:before{
+			border-right: 8px solid #9EEA6A;
+			left:-16px;
+		}
+
+		.right:after{
+			border-left: 8px solid #9EEA6A;
+			right:-16px;
+		}
+
+	.box{
+		width:400px;height:200px;position:relative;background: #eee;margin-top:70px;border-radius: 8px;padding: 20px;box-sizing: border-box;border:1px solid #333;
+	}
+	.box:before{
+		content:'';display:block;position:absolute;top:-15px;left:16px;border:8px solid transparent;border-bottom:8px solid #eee;
+	}
+	.box > em{
+		position: absolute;border:8px solid transparent;border-bottom:8px solid #333;top:0px;left:0px;
+	}
+
+	.logo{
+		margin-top:60px;
+		width:100px;
+		height: 100px;
+		position: relative;
+		background: red;
+		border-radius: 50%;
+	}
+
+	.logo::after{
+		content: '';display:block;width:60px;height: 80px;
+		position:absolute;top:10px;left:20px;border-radius: 50%;background: #fff;
+
+	}
+
+.pie{
+    width:140px;
+    height: 140px;
+    background: #8BC34A;
+    border-radius: 50%;
+    background-image: linear-gradient(to left,transparent 50%,#655 0);
+}
+/*.pie::before{
+    content: '';
+    display: block;
+    margin-left: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
+    transform: rotate(.1turn);/*10%*/
+    transform: rotate(.2turn);/*20%*/
+    transform: rotate(.3turn);/*30%*/
+}*/
+	</style>
+</head>
+<body>
+	<p class = "demo">你好</p>
+
+	<div class="left">
+		<p>吃了吗</p>
+	</div>
+	<div class="right">
+		<p>吃过了，吃了红烧排骨和酸菜鱼</p>
+	</div>
+	
+
+	<div class="box">
+		<em></em>
+		<p>这是弹框</p>
+	</div>
+
+	<div class="logo"></div>
+	
+	<div class="pie"></div>
+</body>
+</html>
